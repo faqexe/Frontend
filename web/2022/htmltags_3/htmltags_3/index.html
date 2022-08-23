@@ -1,0 +1,78 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+
+<head>
+   <!--Заголовок страницы в браузере-->
+   <title>Знакомство с HTML тегами. Часть №3 (Формы)</title>
+   <!--Кодировка страницы-->
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!--Отображаемое тело страницы-->
+
+<body>
+   <form action="#" method="post" enctype="multipart/form-data"></form>
+   <div>
+      <input type="text" name="username" value="">
+      <!--Если поле предусматривает ввод цифр, например, номера телефона, 
+   то стоит указать TYPE="TEL". Это переключит клавиатуру мобильного
+   устройства на цифровую, что значительно упростит ввод данных пользователя-->
+   </div>
+   <div>
+      <input type="password" name="userpass" value="">
+   </div>
+   <div>
+      <p><input checked type="radio" name="beer" value="lager">Светлое пиво</p>
+      <p><input type="radio" name="beer" value="dark">Темное пиво</p>
+      <!--CHECKED выбор по умолчанию-->
+   </div>
+   <br>
+   <div>
+      <p><input type="radio" name="beer2" value="lager">Светлое пиво</p>
+      <p><input checked type="radio" name="beer2" value="dark">Темное пиво</p>
+   </div>
+   <br>
+   <div>
+      <p><input type="checkbox" name="car" value="yes">Наличие авто</p>
+      <p><input checked type="checkbox" name="car2" value="yes">Наличие авто 2</p>
+      <p><input type="checkbox" name="car3" value="yes">Наличие авто 3</p>
+      <p><input checked type="checkbox" name="car4" value="yes">Наличие авто 4</p>
+   </div>
+   <br>
+   <div>
+      <p><input type="file" name="foto" value=""></p>
+   </div>
+   <br>
+   <div>
+      <textarea name="text"></textarea>
+   </div>
+   <br>
+   <div>
+      <select name="color">
+         <option value="red">Красный</option>
+         <!--SELECTED выбор по умолчанию-->
+         <option selected value="yellow">Желтый</option>
+         <option value="blue">Голубой</option>
+      </select>
+   </div>
+   <br>
+   <div>
+      <button type="submit">Отправить</button>
+      <!--TYPE="SUBMIT" отправляет данные
+      TYPE="RESET" очищает форму-->
+   </div>
+
+   <!--Для тэгов INPUT со значением атрибуты TYPE="TEXT" и для TEXAREA
+   можно применить атрибут PLACEHOLDER, который добавит подпись поля-->
+   <!--Для всех тэгов, кроме FORM, можно применить атрибут DISABLED,
+   который блокирует любые действия с полем и делает его визуально тусклым.
+   Заблокированные теги не передают данные на сервер.-->
+   <!--Так же для всех интерактивных тэгов можно применить атрибут TABINDEX
+   со значениями, начиная с 1, который определяет порядок перехода между
+   элементами при нажатии на клавишу TAB. Для группы TYPE="RADIO" данный атрибут
+   должен быть одинаков.-->
+</body>
+
+</html
