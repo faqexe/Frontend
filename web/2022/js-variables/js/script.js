@@ -1,11 +1,10 @@
 let eyesColor = 'blue';
 console.log(eyesColor);
 
-let user = 'Вася',
-userName;
+let user = 'Вася';
+let userName;
 userName = user;
 console.log(userName);
-user = userName;
 console.log(user);
 
 //ДОМАШКА
