@@ -17,11 +17,16 @@
 	<li>Йончи</li>
 </ul>
 
+let elem = document.querySelectorAll('ul > li');
+console.log(elem[1]);
+
 // Задача №3.
 // Получить в переменную коллекцию элементов с классом like
 <div class="like"></div>
 <div class="subscribe"></div>
 <div class="like subscribe"></div>
+
+let elem = document.querySelectorAll('.like');
 
 // Задача №4.
 // Куда добавится <li>Текст</li> ?
@@ -38,6 +43,8 @@ list.insertAdjacentHTML(
 	<li>Пункт №1</li>
 	<li>Пункт №2</li>
 </ul>
+
+вставит после Пункт №2
 */
 
 //========================================================================================================================================================
